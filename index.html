@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Transparently</title>
+		<link rel="stylesheet" href="css/styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<h1>TRANSPARENTLY.</h1>
+			</div>
+
+			<nav>
+				<ul class="nav-links">
+					<li><a href="#">Latest</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Case studies</a></li>
+					<li>
+						<a class="nav-cta" href="#">Contact us</a>
+					</li>
+					<li>
+						<div class="toggle-container">
+							<input type="checkbox" id="switch" name="theme" /><label
+								for="switch"
+								>Toggle</label
+							>
+						</div>
+					</li>
+					<a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+				</ul>
+			</nav>
+		</header>
+		<div id="mobile-menu" class="overlay">
+			<a class="close" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<a href="#">Latest</a>
+				<a href="#">About</a>
+				<a href="#">Case studies</a>
+				<a href="#"></a>
+			</div>
+		</div>
+
+		<div class="landing">
+			<div class="landing-header">
+				<h1>BE TRANSPARENT</h1>
+				<h2>
+					Investigating worldwide business so you can make educated choices.
+				</h2>
+				<div class="form">
+					<input type="text" name="name" autocomplete="off" required />
+					<label for="name" class="label-name">
+						<span class="content-name">Subscribe to our newsletter</span>
+					</label>
+				</div>
+				<section id="scroll-animation" class="scroll">
+					<a href="#scroll-animation"><span></span></a>
+				</section>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="filters">
+				<div class="filter">
+					<input id="all" type="checkbox" />
+					<input id="most-popular" type="checkbox" />
+					<input id="most-recent" type="checkbox" />
+					<input id="three-mins" type="checkbox" />
+					<div class="before-filter-control"></div>
+
+					<div class="filter__control mobile-hidden">
+						<div class="before-filter-control"></div>
+						<div class="filter-control-inner">
+							<label class="filter__button" for="most-popular"
+								>Most popular</label
+							>
+							<label class="filter__button" for="most-recent"
+								>Most recent</label
+							>
+							<label class="filter__button" for="three-mins"
+								>Less than 3 minute read</label
+							>
+						</div>
+					</div>
+
+					<div class="filter__content">
+						<div class="search-bar">
+							<div class="before-search"></div>
+							<div class="search-bar-container">
+								<input type="text" id="filter" placeholder="Search" />
+							</div>
+							<div class="after-search"></div>
+						</div>
+						<div class="filter__control desktop-hidden">
+							<div class="before-filter-control"></div>
+							<div class="filter-control-inner">
+								<label class="filter__button" for="most-popular"
+									>Most popular</label
+								>
+								<label class="filter__button" for="most-recent"
+									>Most recent</label
+								>
+								<label class="filter__button" for="three-mins"
+									>Less than 3 minute read</label
+								>
+							</div>
+						</div>
+
+						<ul id="list" class="filter__list">
+							<li
+								class="filter__item blog-summary"
+								data-filter="most-popular three-mins"
+							>
+								<div class="blog-summary-img">
+									<img src="resources/img/nike-free.png" alt="" />
+								</div>
+								<div class="blog-summary-desc">
+									<div class="blog-summary-desc-main-info">
+										<h3 class="blog-summary-date">27/09/2020</h3>
+										<h2>Nike Free Run production analysis</h2>
+										<p>
+											How are Nike Free Runs made? What are the stats behind
+											their production? Are employees fairly paid and treated.
+											The cost of production for these shoes will shock you.
+										</p>
+									</div>
+									<div class="blog-summary-desc-tags">
+										<div class="blog-summary-desc-tag">
+											<p>
+												<ion-icon
+													class="tag-icon"
+													name="eye-outline"
+												></ion-icon>
+											</p>
+											<p>3 minute read</p>
+										</div>
+										<div class="blog-summary-desc-tag">
+											<p>
+												<ion-icon
+													class="tag-icon"
+													name="share-social-outline"
+												></ion-icon>
+											</p>
+											<p>Share</p>
+										</div>
+										<div class="blog-summary-desc-tag">
+											<p>
+												<ion-icon
+													class="tag-icon"
+													name="bookmark-outline"
+												></ion-icon>
+											</p>
+											<p>Save</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="filter__item blog-summary" data-filter="most-recent">
+								<div class="blog-summary-img">
+									<img src="resources/img/just-giving.jpg" alt="" />
+								</div>
+								<div class="blog-summary-desc">
+									<div class="blog-summary-desc-main-info">
+										<h2>Just "Giving"</h2>
+										<p>
+											Just giving has been accused of misleading donors with a
+											15% voluntary additional charge. This is after the
+											co-founders of the business reportedly purchased two
+											multi-million dollar homes with revenue made through the
+											fundraising giant.
+										</p>
+									</div>
+									<div class="blog-summary-desc-tags">
+										<div class="blog-summary-desc-tag">
+											<p>
+												<ion-icon
+													class="tag-icon"
+													name="eye-outline"
+												></ion-icon>
+											</p>
+											<p>5 minute read</p>
+										</div>
+										<div class="blog-summary-desc-tag">
+											<p>
+												<ion-icon
+													class="tag-icon"
+													name="share-social-outline"
+												></ion-icon>
+											</p>
+											<p>Share</p>
+										</div>
+										<div class="blog-summary-desc-tag">
+											<p>
+												<ion-icon
+													class="tag-icon"
+													name="bookmark-outline"
+												></ion-icon>
+											</p>
+											<p>Save</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="filter__item blog-summary" data-filter="most-recent">
+								<div class="blog-summary-img">
+									<img src="resources/img/just-giving.jpg" alt="" />
+								</div>
+								<div class="blog-summary-desc">
+									<div class="blog-summary-desc-main-info">
+										<h2>Just "Giving"</h2>
+										<p>
+											Just giving has been accused of misleading donors with a
+											15% voluntary additional charge. This is after the
+											co-founders of the business reportedly purchased two
+											multi-million dollar homes with revenue made through the
+											fundraising giant.
+										</p>
+									</div>
+									<div class="blog-summary-desc-tags">
+										<div class="blog-summary-desc-tag">
+											<p>
+												<ion-icon
+													class="tag-icon"
+													name="eye-outline"
+												></ion-icon>
+											</p>
+											<p>5 minute read</p>
+										</div>
+										<div class="blog-summary-desc-tag">
+											<p>
+												<ion-icon
+													class="tag-icon"
+													name="share-social-outline"
+												></ion-icon>
+											</p>
+											<p>Share</p>
+										</div>
+										<div class="blog-summary-desc-tag">
+											<p>
+												<ion-icon
+													class="tag-icon"
+													name="bookmark-outline"
+												></ion-icon>
+											</p>
+											<p>Save</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			filter.addEventListener("keyup", () => {
+				Array.from(list.children).map((h2) => {
+					const matchFound = new RegExp(filter.value, "gi").test(h2.innerText);
+					if (!matchFound) {
+						h2.classList.add("hidden");
+					} else {
+						h2.classList.remove("hidden");
+					}
+				});
+			});
+		</script>
+		<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
