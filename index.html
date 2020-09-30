@@ -11,38 +11,43 @@
 		/>
 	</head>
 	<body>
-		<header>
-			<div class="logo">
-				<h1>TRANSPARENTLY.</h1>
-			</div>
+		<div class="wrapper">
+			<header>
+				<div class="logo">
+					<h1>TRANSPARENTLY.</h1>
+				</div>
 
-			<nav>
-				<ul class="nav-links">
-					<li><a href="#">Latest</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Case studies</a></li>
-					<li>
-						<a class="nav-cta" href="#">Contact us</a>
-					</li>
-					<li>
-						<div class="toggle-container">
-							<input type="checkbox" id="switch" name="theme" /><label
-								for="switch"
-								>Toggle</label
-							>
-						</div>
-					</li>
-					<a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
-				</ul>
-			</nav>
-		</header>
+				<nav>
+					<ul class="nav-links">
+						<li><a href="#">Latest</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Case studies</a></li>
+						<li>
+							<a class="nav-cta" href="#">Contact us</a>
+						</li>
+						<li>
+							<div class="toggle-container">
+								<input type="checkbox" id="switch" name="theme" /><label
+									for="switch"
+									>Toggle</label
+								>
+							</div>
+						</li>
+						<a onclick="openNav()" class="menu" href="#"
+							><button>Menu</button></a
+						>
+					</ul>
+				</nav>
+			</header>
+		</div>
+
 		<div id="mobile-menu" class="overlay">
 			<a class="close" onclick="closeNav()">&times;</a>
 			<div class="overlay-content">
 				<a href="#">Latest</a>
 				<a href="#">About</a>
 				<a href="#">Case studies</a>
-				<a href="#"></a>
+				<a href="#">Contact us</a>
 			</div>
 		</div>
 
@@ -112,146 +117,56 @@
 						</div>
 
 						<ul id="list" class="filter__list">
-							<li
-								class="filter__item blog-summary"
-								data-filter="most-popular three-mins"
+							<a href="./blog-posts/1-flyknit-technology.html"
+								><li
+									class="filter__item blog-summary"
+									data-filter="most-popular three-mins"
+								>
+									<div class="blog-summary-img">
+										<img src="resources/img/nike-free.png" alt="" />
+									</div>
+									<div class="blog-summary-desc">
+										<div class="blog-summary-desc-main-info">
+											<h3 class="blog-summary-date">29/09/2020</h3>
+											<h2>The impact of Flyknit technology</h2>
+											<p>
+												The revolution of Flyknit technology, reducing waste by
+												80% and flipping the footwear industry on its head.
+												Learn about why Flyknit is such a game-changer.
+											</p>
+										</div>
+										<div class="blog-summary-desc-tags">
+											<div class="blog-summary-desc-tag">
+												<p>
+													<ion-icon
+														class="tag-icon"
+														name="eye-outline"
+													></ion-icon>
+												</p>
+												<p>4 minute read</p>
+											</div>
+											<div class="blog-summary-desc-tag">
+												<p>
+													<ion-icon
+														class="tag-icon"
+														name="share-social-outline"
+													></ion-icon>
+												</p>
+												<p>Share</p>
+											</div>
+											<div class="blog-summary-desc-tag">
+												<p>
+													<ion-icon
+														class="tag-icon"
+														name="bookmark-outline"
+													></ion-icon>
+												</p>
+												<p>Save</p>
+											</div>
+										</div>
+									</div>
+								</li></a
 							>
-								<div class="blog-summary-img">
-									<img src="resources/img/nike-free.png" alt="" />
-								</div>
-								<div class="blog-summary-desc">
-									<div class="blog-summary-desc-main-info">
-										<h3 class="blog-summary-date">27/09/2020</h3>
-										<h2>Nike Free Run production analysis</h2>
-										<p>
-											How are Nike Free Runs made? What are the stats behind
-											their production? Are employees fairly paid and treated.
-											The cost of production for these shoes will shock you.
-										</p>
-									</div>
-									<div class="blog-summary-desc-tags">
-										<div class="blog-summary-desc-tag">
-											<p>
-												<ion-icon
-													class="tag-icon"
-													name="eye-outline"
-												></ion-icon>
-											</p>
-											<p>3 minute read</p>
-										</div>
-										<div class="blog-summary-desc-tag">
-											<p>
-												<ion-icon
-													class="tag-icon"
-													name="share-social-outline"
-												></ion-icon>
-											</p>
-											<p>Share</p>
-										</div>
-										<div class="blog-summary-desc-tag">
-											<p>
-												<ion-icon
-													class="tag-icon"
-													name="bookmark-outline"
-												></ion-icon>
-											</p>
-											<p>Save</p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="filter__item blog-summary" data-filter="most-recent">
-								<div class="blog-summary-img">
-									<img src="resources/img/just-giving.jpg" alt="" />
-								</div>
-								<div class="blog-summary-desc">
-									<div class="blog-summary-desc-main-info">
-										<h2>Just "Giving"</h2>
-										<p>
-											Just giving has been accused of misleading donors with a
-											15% voluntary additional charge. This is after the
-											co-founders of the business reportedly purchased two
-											multi-million dollar homes with revenue made through the
-											fundraising giant.
-										</p>
-									</div>
-									<div class="blog-summary-desc-tags">
-										<div class="blog-summary-desc-tag">
-											<p>
-												<ion-icon
-													class="tag-icon"
-													name="eye-outline"
-												></ion-icon>
-											</p>
-											<p>5 minute read</p>
-										</div>
-										<div class="blog-summary-desc-tag">
-											<p>
-												<ion-icon
-													class="tag-icon"
-													name="share-social-outline"
-												></ion-icon>
-											</p>
-											<p>Share</p>
-										</div>
-										<div class="blog-summary-desc-tag">
-											<p>
-												<ion-icon
-													class="tag-icon"
-													name="bookmark-outline"
-												></ion-icon>
-											</p>
-											<p>Save</p>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="filter__item blog-summary" data-filter="most-recent">
-								<div class="blog-summary-img">
-									<img src="resources/img/just-giving.jpg" alt="" />
-								</div>
-								<div class="blog-summary-desc">
-									<div class="blog-summary-desc-main-info">
-										<h2>Just "Giving"</h2>
-										<p>
-											Just giving has been accused of misleading donors with a
-											15% voluntary additional charge. This is after the
-											co-founders of the business reportedly purchased two
-											multi-million dollar homes with revenue made through the
-											fundraising giant.
-										</p>
-									</div>
-									<div class="blog-summary-desc-tags">
-										<div class="blog-summary-desc-tag">
-											<p>
-												<ion-icon
-													class="tag-icon"
-													name="eye-outline"
-												></ion-icon>
-											</p>
-											<p>5 minute read</p>
-										</div>
-										<div class="blog-summary-desc-tag">
-											<p>
-												<ion-icon
-													class="tag-icon"
-													name="share-social-outline"
-												></ion-icon>
-											</p>
-											<p>Share</p>
-										</div>
-										<div class="blog-summary-desc-tag">
-											<p>
-												<ion-icon
-													class="tag-icon"
-													name="bookmark-outline"
-												></ion-icon>
-											</p>
-											<p>Save</p>
-										</div>
-									</div>
-								</div>
-							</li>
 						</ul>
 					</div>
 				</div>
