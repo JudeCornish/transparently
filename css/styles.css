@@ -993,7 +993,7 @@ input[type="checkbox"]#three-mins:checked
 
 @media screen and (max-width: 800px) {
 	.blog-content h1 {
-		font-size: 150%;
+		font-size: 200%;
 		margin-bottom: 2vh;
 	}
 
