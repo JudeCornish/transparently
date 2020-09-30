@@ -56,6 +56,8 @@ header {
 
 .menu {
 	display: none;
+	color: var(--color-headings);
+	font-size: 175%;
 }
 
 button {
@@ -78,7 +80,7 @@ button:hover {
 		display: none;
 	}
 	.menu {
-		display: inherit;
+		display: block;
 	}
 }
 
@@ -88,12 +90,13 @@ button:hover {
 	height: 100%;
 	width: 0;
 	position: fixed;
-	z-index: 1;
+	z-index: 20;
 	left: 0;
 	top: 0;
-	background-color: #24252a;
+	background-color: #323232;
 	overflow-x: hidden;
 	transition: all 0.5s ease 0s;
+	color: white;
 }
 
 .overlay-content {
@@ -106,9 +109,13 @@ button:hover {
 
 .overlay a {
 	padding: 15px;
-	font-size: 36px;
+	font-size: 125%;
 	display: block;
 	transition: all 0.3s ease 0s;
+	color: white;
+	font-weight: 300;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .overlay a:hover,
@@ -117,9 +124,9 @@ button:hover {
 }
 .overlay .close {
 	position: absolute;
-	top: 20px;
-	right: 45px;
-	font-size: 60px;
+	top: 5px;
+	right: 5px;
+	font-size: 200%;
 }
 
 @media screen and (max-height: 450px) {
@@ -128,8 +135,6 @@ button:hover {
 	}
 	.overlay .close {
 		font-size: 40px;
-		top: 15px;
-		right: 35px;
 	}
 }
 
@@ -328,7 +333,7 @@ html.transition *:after {
 	text-align: center;
 	display: flex;
 	justify-content: space-around;
-	z-index: 10000;
+	z-index: 2;
 }
 
 #scroll-animation a span {
