@@ -30,7 +30,7 @@ header {
 	height: 8vh;
 	font-family: "Barlow Condensed", sans-serif;
 	text-transform: uppercase;
-	z-index: 20;
+	z-index: 3;
 	width: 100%;
 }
 
@@ -38,7 +38,7 @@ header {
 	position: fixed;
 	top: 0vh;
 	width: 100%;
-	z-index: 22;
+	z-index: 3;
 }
 
 .logo {
