@@ -34,16 +34,11 @@ header {
 	width: 100%;
 }
 
-@media screen and (max-width: 800px) {
-	header {
-		height: 6vh;
-	}
-}
-
 .header-fixed {
 	position: fixed;
 	top: 0vh;
 	width: 100%;
+	z-index: 22;
 }
 
 .logo {
