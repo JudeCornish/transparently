@@ -316,8 +316,8 @@ html.transition *:after {
 		font-size: 75%;
 	}
 	header {
-		padding-top: 1vh;
-		padding-bottom: 3vh;
+		padding-top: 1.5vh;
+		padding-bottom: 1.5vh;
 	}
 }
 
