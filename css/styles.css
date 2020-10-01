@@ -896,6 +896,12 @@ input[type="checkbox"]#three-mins:checked
 	height: 100%;
 }
 
+@media screen and (max-width: 800px) {
+	.blog-header {
+		height: 22.5vh;
+	}
+}
+
 .blog-title {
 	text-align: center;
 }
