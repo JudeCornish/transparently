@@ -941,6 +941,12 @@ input[type="checkbox"]#three-mins:checked
 	margin-left: 15px;
 }
 
+@media screen and (max-width: 800px) {
+	.author-summary {
+		margin-left: 0px;
+	}
+}
+
 .author-name {
 	font-weight: 600;
 	font-size: 130%;
