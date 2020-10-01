@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Transparently</title>
+		<link rel="stylesheet" href="../css/styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="header-fixed">
+			<div class="wrapper">
+				<header>
+					<a href="../index.html" class="logo">
+						<h1>TRANSPARENTLY.</h1>
+					</a>
+
+					<nav>
+						<ul class="nav-links">
+							<li><a href="#">Latest</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Case studies</a></li>
+							<li>
+								<a class="nav-cta" href="#">Contact us</a>
+							</li>
+							<li>
+								<div class="toggle-container">
+									<input type="checkbox" id="switch" name="theme" /><label
+										for="switch"
+										>Toggle</label
+									>
+								</div>
+							</li>
+						</ul>
+						<a onclick="openNav()" class="menu" href="#"
+							><ion-icon name="menu-outline"></ion-icon>
+						</a>
+					</nav>
+				</header>
+			</div>
+		</div>
+
+		<div id="mobile-menu" class="overlay">
+			<a class="close" onclick="closeNav()"
+				><ion-icon name="close-outline"></ion-icon
+			></a>
+			<div class="overlay-content">
+				<a href="#">Latest</a>
+				<a href="#">About</a>
+				<a href="#">Case studies</a>
+				<a href="#">Contact us</a>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="blog-header">
+				<img src="../resources/img/who-gives-a-crap-header.png" alt="" />
+			</div>
+
+			<div class="blog-container">
+				<div class="blog-content">
+					<h3 class="blog-summary-date">01/10/2020</h3>
+					<div class="blog-content-header">
+						<h1>Who gives a crap</h1>
+
+						<div class="blog-content-summary">
+							<h4>
+								The toilet paper company that is changing the world, one wipe at
+								a time. See how this company is donating 50% of its profits and
+								fighting a serious worldwide challenge.
+							</h4>
+						</div>
+						<div class="mobile-blog-ctas">
+							<div class="sidebar-info">
+								<ion-icon class="sidebar-icon" name="time-outline"></ion-icon>
+								<p>2 mins</p>
+							</div>
+							<div class="sidebar-info">
+								<ion-icon
+									class="sidebar-icon"
+									name="share-social-outline"
+								></ion-icon>
+								<p>Share</p>
+							</div>
+							<div class="sidebar-info">
+								<ion-icon
+									class="sidebar-icon"
+									name="bookmark-outline"
+								></ion-icon>
+								<p>Save</p>
+							</div>
+						</div>
+					</div>
+					<h2>Who are "who gives a crap"?</h2>
+					<p>
+						Who gives a crap is a profound start-up created by Australian trio
+						Jehan Ratnatung, Danny Alexander and Simon Giffiths. Born in 2010
+						through a viral IndieGogo campaign, where Simon Griffiths pledged to
+						sit on the toilet until the fundraising minimum had been reached. 50
+						hours later, the "Who gives a crap" journey began.
+					</p>
+					<p>
+						In an interview with SmartCompany, Griffith stated that he estimated
+						they "ended up getting the equivalent of about one million in PR
+						spend thanks to the stunt". It goes without saying, the brand took
+						off. Now, the modern toilet paper brand has donated $5.4 million to
+						a variety of organisations around the world and inspired others such
+						as "No.2" to follow suit on the initiative.
+					</p>
+					<h2>Brand mission</h2>
+					<p>
+						"Our goal is to make sure everyone has access to a toilet by 2050.
+						Building a sustainable business model that delivers quality and
+						environmentally responsible products at competitive prices is how
+						we’re going to get there.”
+					</p>
+					<p>
+						The brand operates on a millennial style subscription-based web
+						purchase, sold direct-to-consumer model. Making what could quite
+						frankly be the most boring product out there, a fun and attractive
+						experience for young people in particular. You could even call it
+						trendy. Granting "who gives a crap" relentless traction from the
+						get-go.
+					</p>
+					<h2>Donating 50% of profits:</h2>
+					<p>
+						Who gives a crap has explained who assesses their claim to be
+						donating 50% of profits generated in the following statement:
+					</p>
+					<p>
+						“We are certified B Corp, which means that we’ve been assessed as a
+						‘for benefit’ company, rather than purely ‘for profit’. This
+						certification covers a wide range of aspects of our business and
+						ranks our performance across a rigorous set of criteria. Part of
+						this certification involved an independent assessment of our
+						financial statements confirming our claim to donate at least 50% to
+						charities.”
+					</p>
+					<p>
+						B Corporations are a group of companies that are using the power of
+						business to create a positive impact on the world and generate a
+						shared and durable prosperity for all. The Who Gives A Crap 2016 B
+						Impact Report, which is published online, gives Who Gives A Crap a
+						score of 101, out of a maximum of 200, where as the median score for
+						all assessed companies is just 55.
+					</p>
+					<div class="works-cited">
+						<h2>Works cited</h2>
+						<ul class="works-list">
+							<li>
+								<p>
+									<a
+										href="https://www.smartcompany.com.au/entrepreneurs/influencers-profiles/who-gives-a-crap-charitable-toilet-paper/"
+										target="_blank"
+									>
+										Two days on the loo: The extreme lengths this founder went
+										to launching charitable toilet-paper company Who Gives a
+										Crap</a
+									>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a
+										href="https://thekritic.net/2017/06/who-gives-a-crap/"
+										target="_blank"
+										>Who gives a crap?</a
+									>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a
+										href="https://www.vox.com/the-goods/2019/7/17/20688093/toilet-paper-no-2-tushy-who-gives-a-crap-charmin"
+										target="_blank"
+										>Disruption has come for toilet paper</a
+									>
+								</p>
+							</li>
+							<li>
+								<p>
+									<a
+										href="https://www.notion.so/002-who-gives-a-crap-4eeffc0a1d00429ba97cb2a0f8fcd6db#6c350c9d957a434f846fbe47c8e2a905"
+										target="_blank"
+										>How much do you donate dollar value?</a
+									>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="blog-sidebar">
+					<div class="author-container">
+						<img src="../resources/img/jude-formal.jpg" alt="" />
+
+						<div class="author-summary">
+							<a href="">
+								<p class="author-name">Jude Cornish</p>
+								<p class="about-author">About the author</p>
+							</a>
+						</div>
+					</div>
+					<p class="author-short-bio">
+						Business management student with a desire to investigate big
+						business. Delving into controversy, innovation and hidden figures.
+					</p>
+					<div class="sidebar-info-container mobile">
+						<div class="sidebar-info">
+							<ion-icon class="sidebar-icon" name="time-outline"></ion-icon>
+							<p>3 mins</p>
+						</div>
+						<div class="sidebar-info">
+							<ion-icon
+								class="sidebar-icon"
+								name="share-social-outline"
+							></ion-icon>
+							<p>Share</p>
+						</div>
+						<div class="sidebar-info">
+							<ion-icon class="sidebar-icon" name="bookmark-outline"></ion-icon>
+							<p>Save</p>
+						</div>
+					</div>
+
+					<div class="sponsor">
+						<div class="sponsor-link">
+							<h3>Who gives a crap toilet paper</h3>
+							<p>
+								<a
+									href="https://uk.whogivesacrap.org/collections/all"
+									target="_blank"
+									>Purchase here</a
+								>
+							</p>
+							<img src="../resources/img/who-gives-a-crap-sponsor.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+		<script type="text/javascript" src="../app.js"></script>
+	</body>
+</html>
