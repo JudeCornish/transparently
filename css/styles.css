@@ -898,7 +898,7 @@ input[type="checkbox"]#three-mins:checked
 
 @media screen and (max-width: 800px) {
 	.blog-header {
-		height: 22.5vh;
+		height: 25vh;
 	}
 }
 
